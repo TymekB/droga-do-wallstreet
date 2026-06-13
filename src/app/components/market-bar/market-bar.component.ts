@@ -17,7 +17,7 @@ import { SparklineComponent } from '../sparkline/sparkline.component';
             <path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"
               stroke="var(--brand-ink)" stroke-width="1.4" />
           </svg>
-          <span>Rynki GPW</span>
+          <span>Rynki</span>
           <svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
           </svg>
