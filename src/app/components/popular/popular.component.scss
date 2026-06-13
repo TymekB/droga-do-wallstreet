@@ -1,0 +1,60 @@
+:host {
+  display: block;
+}
+
+.pop {
+  position: sticky;
+  top: 130px;
+}
+
+.pop__head {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.pop__head h2 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+.pop__head svg {
+  color: var(--text-muted);
+}
+.pop__head:hover,
+.pop__head:hover svg {
+  color: var(--brand-ink);
+}
+
+.pop__item {
+  padding: 15px 0;
+  border-top: 1px solid var(--border);
+}
+.pop__title {
+  margin: 0 0 7px;
+  font-size: 15px;
+  line-height: 1.34;
+  font-weight: 600;
+  color: var(--text);
+  transition: color 0.15s ease;
+}
+.pop__title:hover {
+  color: var(--brand-ink);
+}
+.pop__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.pop__source {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.dot {
+  color: var(--text-dim);
+}

@@ -1,0 +1,84 @@
+:host {
+  display: block;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 40px;
+  padding-top: 26px;
+  padding-bottom: 48px;
+  align-items: start;
+}
+
+.sep {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 26px 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* sidebar separated with a left divider, like the reference layout */
+.layout__side {
+  padding-left: 40px;
+  border-left: 1px solid var(--border);
+  margin-left: -40px;
+}
+
+/* ---- Footer ---- */
+.foot {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+.foot__inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  height: 64px;
+}
+.foot__brand {
+  font-weight: 800;
+  color: var(--brand-ink);
+}
+.foot__note {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .layout__side {
+    padding-left: 0;
+    border-left: 0;
+    margin-left: 0;
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+  }
+  .layout__side ::ng-deep .pop {
+    position: static;
+  }
+}
+
+@media (max-width: 720px) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .columns ::ng-deep .col {
+    padding: 18px 0;
+    border-top: 1px solid var(--border);
+  }
+  .columns ::ng-deep .col:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+}
