@@ -52,12 +52,12 @@ export const MARKETS: MarketIndex[] = [
     spark: [46.2, 46.6, 46.4, 47.0, 46.8, 47.4, 47.7, 47.85],
   },
   {
-    symbol: 'VIX',
-    label: 'VIX',
-    value: 17.68,
-    change: -1.76,
-    changePercent: -9.05,
-    spark: [19.4, 19.1, 18.8, 18.9, 18.3, 18.0, 17.8, 17.68],
+    symbol: 'CRDO',
+    label: 'Credo',
+    value: 72.34,
+    change: 1.86,
+    changePercent: 2.64,
+    spark: [69.8, 70.4, 70.1, 71.0, 70.7, 71.6, 72.0, 72.34],
   },
   {
     symbol: 'GOLD',
