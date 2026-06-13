@@ -100,6 +100,18 @@
 .topnav__link.is-active {
   color: var(--brand-ink);
 }
+.topnav__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+}
+.topnav__icon svg {
+  display: block;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.topnav__icon:hover svg {
+  transform: scale(1.08);
+}
 
 /* ---- Main nav ---- */
 .mainnav {

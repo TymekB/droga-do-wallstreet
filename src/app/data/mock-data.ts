@@ -14,7 +14,7 @@ export const PRIMARY_NAV: NavItem[] = [
 export const TOP_NAV: NavItem[] = [
   { label: 'Wiadomości' },
   { label: 'Finanse', active: true },
-  { label: 'Sport' },
+  { label: 'YouTube', icon: 'youtube' },
 ];
 
 export const MARKETS: MarketIndex[] = [

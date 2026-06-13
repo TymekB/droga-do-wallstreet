@@ -32,7 +32,19 @@ import { PRIMARY_NAV, TOP_NAV } from '../../data/mock-data';
 
           <nav class="topnav" aria-label="Sekcje serwisu">
             @for (item of topNav; track item.label) {
-              <a class="topnav__link" [class.is-active]="item.active" href="#">{{ item.label }}</a>
+              @if (item.icon === 'youtube') {
+                <a class="topnav__link topnav__icon" href="#" [attr.aria-label]="item.label" [title]="item.label">
+                  <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      fill="#FF0000"
+                      d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8Z"
+                    />
+                    <path fill="#fff" d="M9.6 15.5V8.5l6.2 3.5-6.2 3.5Z" />
+                  </svg>
+                </a>
+              } @else {
+                <a class="topnav__link" [class.is-active]="item.active" href="#">{{ item.label }}</a>
+              }
             }
           </nav>
         </div>
