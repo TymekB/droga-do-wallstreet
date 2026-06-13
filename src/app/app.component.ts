@@ -40,9 +40,7 @@ import { PopularComponent } from './components/popular/popular.component';
     <footer class="foot">
       <div class="container foot__inner">
         <span class="foot__brand">Droga Do Wallstreet</span>
-        <span class="foot__note">
-          Dane wyłącznie demonstracyjne. © {{ year }} — projekt poglądowy inspirowany Yahoo Finance.
-        </span>
+        <span class="foot__note">© {{ year }} — kopiowanie zabronione</span>
       </div>
     </footer>
   `,
