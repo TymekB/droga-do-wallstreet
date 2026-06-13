@@ -1,24 +1,19 @@
-/* ===== Droga Do Wallstreet — global theme ===== */
 :root {
-  /* Brand */
-  --brand: #fcad03; /* czyste złoto — wypełnienia (przyciski, podkreślenia, znaczniki) */
-  --brand-strong: #e89e00; /* hover wypełnień */
-  --brand-ink: #8a5e00; /* czytelny akcent tekstowy na jasnym tle */
+  --brand: #fcad03;
+  --brand-strong: #e89e00;
+  --brand-ink: #8a5e00;
   --brand-dim: rgba(252, 173, 3, 0.18);
 
-  /* Surfaces (light, Yahoo-finance-like) */
   --bg: #f6f7f8;
   --surface: #ffffff;
   --surface-2: #f1f3f5;
   --surface-3: #e6e9ec;
   --border: #e3e7ea;
 
-  /* Text */
   --text: #16191d;
   --text-muted: #5a6470;
   --text-dim: #8b95a0;
 
-  /* Semantic market colors (przyciemnione dla czytelności na bieli) */
   --up: #0b8f54;
   --down: #d23730;
 
@@ -60,7 +55,6 @@ button {
   color: #000;
 }
 
-/* thin custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -86,8 +80,6 @@ button {
   color: var(--down);
 }
 
-/* ===== Print / PDF ===== */
-/* Szeroka strona, by wymusić układ desktopowy (>1024px) zamiast mobilnego. */
 @page {
   size: 1280px 1810px;
   margin: 28px;
@@ -99,7 +91,6 @@ button {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
-  /* nagłówek i sidebar nie powinny być "sticky" w druku */
   ddw-header {
     position: static !important;
   }

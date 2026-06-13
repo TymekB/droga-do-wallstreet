@@ -2,7 +2,6 @@ import { DecimalPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, computed, signal } from '@angular/core';
 import { TickerTag } from '../../models/finance.models';
 
-/** Mała "pigułka" z symbolem tickera i zmianą procentową (zielona/czerwona). */
 @Component({
   selector: 'ddw-ticker-tag',
   standalone: true,

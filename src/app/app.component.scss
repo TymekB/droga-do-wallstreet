@@ -23,14 +23,12 @@
   gap: 30px;
 }
 
-/* sidebar separated with a left divider, like the reference layout */
 .layout__side {
   padding-left: 40px;
   border-left: 1px solid var(--border);
   margin-left: -40px;
 }
 
-/* ---- Footer ---- */
 .foot {
   border-top: 1px solid var(--border);
   background: var(--surface);

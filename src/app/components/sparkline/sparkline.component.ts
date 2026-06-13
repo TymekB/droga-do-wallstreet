@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, computed, signal } from '@angular/core';
 
-/** Lekki mini-wykres (sparkline) rysowany jako SVG polyline. */
 @Component({
   selector: 'ddw-sparkline',
   standalone: true,
@@ -48,7 +47,6 @@ export class SparklineComponent {
     this._data.set(value ?? []);
   }
 
-  /** Mapuje wartości na współrzędne SVG z 2px paddingiem w pionie. */
   private readonly coords = computed(() => {
     const data = this._data();
     if (data.length < 2) {
@@ -73,7 +71,6 @@ export class SparklineComponent {
       .join(' '),
   );
 
-  /** Domknięty obszar pod linią (delikatne wypełnienie). */
   readonly fillPoints = computed(() => {
     const c = this.coords();
     if (!c.length) {
