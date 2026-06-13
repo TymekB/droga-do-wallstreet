@@ -42,6 +42,15 @@ import { PRIMARY_NAV, TOP_NAV } from '../../data/mock-data';
                     <path fill="#fff" d="M9.6 15.5V8.5l6.2 3.5-6.2 3.5Z" />
                   </svg>
                 </a>
+              } @else if (item.icon === 'x') {
+                <a class="topnav__link topnav__icon" href="#" [attr.aria-label]="item.label" [title]="item.label">
+                  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      fill="var(--text)"
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.656l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644Z"
+                    />
+                  </svg>
+                </a>
               } @else {
                 <a class="topnav__link" [class.is-active]="item.active" href="#">{{ item.label }}</a>
               }

@@ -35,6 +35,6 @@ export interface NewsColumn {
 export interface NavItem {
   label: string;
   active?: boolean;
-  /** Gdy ustawione, zamiast etykiety renderowana jest ikona (np. 'youtube'). */
-  icon?: 'youtube';
+  /** Gdy ustawione, zamiast etykiety renderowana jest ikona (np. 'youtube', 'x'). */
+  icon?: 'youtube' | 'x';
 }
